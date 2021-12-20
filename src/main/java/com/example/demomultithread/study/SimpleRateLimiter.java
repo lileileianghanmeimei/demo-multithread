@@ -5,6 +5,9 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
 import redis.clients.jedis.Response;
 
+/**
+ *Redis -- 限流简单限流
+ */
 public class SimpleRateLimiter {
     private Jedis jedis;
     public SimpleRateLimiter(Jedis jedis) {
